@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пошук роботи — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html">Пошук працівників</a><a href="jobs.html" aria-current="page">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container">
+  <h1 class="page-title">Пошук роботи</h1>
+  <form class="toolbar" id="filters" role="search" onsubmit="return false">
+    <div class="field"><label for="j-cat">область роботи</label>
+      <select class="select" id="j-cat" data-filter="category"><option value="">Усі</option><option value="frontend">Frontend</option><option value="backend">Backend</option><option value="fullstack">Fullstack</option></select></div>
+    <div class="field"><label for="j-lvl">рівень знань</label>
+      <select class="select" id="j-lvl" data-filter="level"><option value="">Усі</option><option value="junior">junior</option><option value="middle">middle</option><option value="senior">senior</option></select></div>
+    <div class="field search"><label class="visually-hidden" for="j-q">Пошук</label><input class="input" id="j-q" type="search" placeholder="пошук роботи" data-search></div>
+  </form>
+  <ul class="results" id="results" style="list-style:none;margin:0;padding:0 0 48px">
+    <li><article class="card result" data-category="frontend" data-level="junior">
+      <div class="photo" aria-hidden="true">TE</div>
+      <div class="result__body">
+        <div class="result__meta"><h2 style="font-size:16px">Junior Frontend-розробник</h2><span class="tag">Frontend</span><span class="tag tag--muted">junior</span></div>
+        <p>Верстка адаптивних сторінок за макетами Figma, підтримка React-компонентів. Віддалена робота.</p>
+      </div>
+      <a class="btn" href="job.html?id=1">докладніше</a>
+    </article></li>
+    <li><article class="card result" data-category="backend" data-level="middle">
+      <div class="photo" aria-hidden="true">DA</div>
+      <div class="result__body">
+        <div class="result__meta"><h2 style="font-size:16px">Backend-розробник (Python/Django)</h2><span class="tag">Backend</span><span class="tag tag--muted">middle</span></div>
+        <p>Розробка REST API, інтеграція платіжних шлюзів, оптимізація запитів до PostgreSQL.</p>
+      </div>
+      <a class="btn" href="job.html?id=2">докладніше</a>
+    </article></li>
+    <li><article class="card result" data-category="fullstack" data-level="senior">
+      <div class="photo" aria-hidden="true">CL</div>
+      <div class="result__body">
+        <div class="result__meta"><h2 style="font-size:16px">Fullstack-розробник</h2><span class="tag">Fullstack</span><span class="tag tag--muted">senior</span></div>
+        <p>Побудова вебплатформи з нуля: React, Node.js, CI/CD. Менторство молодших розробників.</p>
+      </div>
+      <a class="btn" href="job.html?id=3">докладніше</a>
+    </article></li>
+  </ul>
+  <p class="empty" id="empty" hidden>Вакансій не знайдено. Змініть фільтри.</p>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

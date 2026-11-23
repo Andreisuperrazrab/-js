@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пошук працівників — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html" aria-current="page">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container">
+  <h1 class="page-title">Пошук працівників</h1>
+  <form class="toolbar" id="filters" role="search" onsubmit="return false">
+    <div class="field"><label for="f-cat">область знань</label>
+      <select class="select" id="f-cat" data-filter="category"><option value="">Усі</option><option value="frontend">Frontend</option><option value="backend">Backend</option><option value="fullstack">Fullstack</option></select></div>
+    <div class="field"><label for="f-lvl">рівень кваліфікації</label>
+      <select class="select" id="f-lvl" data-filter="level"><option value="">Усі</option><option value="junior">junior</option><option value="middle">middle</option><option value="senior">senior</option></select></div>
+    <div class="field"><label for="f-rate">рейтинг</label>
+      <select class="select" id="f-rate" data-filter="rating"><option value="">Будь-який</option><option value="4">від 4</option><option value="4.5">від 4.5</option><option value="5">5</option></select></div>
+    <div class="field"><label for="f-status">доступність</label>
+      <select class="select" id="f-status" data-filter="status"><option value="">Усі</option><option value="free">Free</option><option value="busy">Busy</option></select></div>
+    <div class="field search"><label class="visually-hidden" for="f-q">Пошук</label><input class="input" id="f-q" type="search" placeholder="пошук працівників" data-search></div>
+  </form>
+  <ul class="results" id="results" style="list-style:none;margin:0;padding:0 0 48px">
+    <li><article class="card result" data-category="frontend" data-level="junior" data-rating="4.5" data-status="free">
+      <div class="photo" aria-hidden="true">ВК</div>
+      <div class="result__body">
+        <div class="result__meta">
+          <h2 style="font-size:16px">Віталій Кравченко</h2>
+          <span class="tag">Frontend</span><span class="tag tag--muted">junior</span>
+          <span class="status status--free">Free</span>
+          <span class="rating" aria-label="Рейтинг 4.5"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>4.5</span>
+        </div>
+        <p>Верстаю адаптивні інтерфейси на HTML, CSS і JavaScript, працюю з Figma та React. Шукаю перші комерційні проєкти.</p>
+      </div>
+      <a class="btn" href="freelancer.html?id=1">докладніше</a>
+    </article></li>
+    <li><article class="card result" data-category="backend" data-level="middle" data-rating="4" data-status="free">
+      <div class="photo" aria-hidden="true">ІС</div>
+      <div class="result__body">
+        <div class="result__meta">
+          <h2 style="font-size:16px">Ірина Савченко</h2>
+          <span class="tag">Backend</span><span class="tag tag--muted">middle</span>
+          <span class="status status--free">Free</span>
+          <span class="rating" aria-label="Рейтинг 4"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>4</span>
+        </div>
+        <p>Розробляю API на Python та Django, налаштовую бази даних PostgreSQL, пишу автотести. Досвід — 3 роки.</p>
+      </div>
+      <a class="btn" href="freelancer.html?id=2">докладніше</a>
+    </article></li>
+    <li><article class="card result" data-category="fullstack" data-level="senior" data-rating="5" data-status="busy">
+      <div class="photo" aria-hidden="true">АБ</div>
+      <div class="result__body">
+        <div class="result__meta">
+          <h2 style="font-size:16px">Андрій Бондар</h2>
+          <span class="tag">Fullstack</span><span class="tag tag--muted">senior</span>
+          <span class="status status--busy">Busy</span>
+          <span class="rating" aria-label="Рейтинг 5"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>5</span>
+        </div>
+        <p>Повний цикл розробки вебсервісів: React, Node.js, DevOps. Керував командою з п'яти розробників.</p>
+      </div>
+      <a class="btn" href="freelancer.html?id=3">докладніше</a>
+    </article></li>
+  </ul>
+  <p class="empty" id="empty" hidden>Нікого не знайдено. Змініть фільтри.</p>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

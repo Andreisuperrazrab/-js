@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 108" width="240" height="108" role="img" aria-label="Bounty Hunter">
+  <g fill="none" stroke="#000" stroke-width="4">
+    <circle cx="54" cy="54" r="32"/>
+    <circle cx="54" cy="54" r="25" stroke-width="1.5" stroke-dasharray="1.5 3"/>
+    <path d="M10 54h28M70 54h28M54 8v28M54 72v28" stroke-width="5"/>
+  </g>
+  <text x="54" y="68" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="40" fill="#000">$</text>
+  <text x="102" y="52" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="24" fill="#000">Bounty</text>
+  <text x="102" y="78" font-family="Montserrat, Arial, sans-serif" font-weight="700" font-size="24" fill="#000">Hunter</text>
+</svg>

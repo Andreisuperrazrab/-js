@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Чат — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html" aria-current="page">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main>
+  <section class="chat" aria-label="Чат">
+    <div class="chat__head"><div class="avatar" id="c-avatar" aria-hidden="true">ВК</div><span id="c-name">Віталій Кравченко</span></div>
+    <div class="card chat__log" id="chat-log" aria-live="polite"></div>
+    <form class="chat__form" id="chat-form">
+      <a class="btn btn--outline" href="home.html">до головної сторінки</a>
+      <label class="visually-hidden" for="chat-input">Повідомлення</label>
+      <textarea class="textarea" id="chat-input" placeholder="введіть повідомлення" required></textarea>
+      <button class="btn btn--send" type="submit" aria-label="Відправити"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg></button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вакансія — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html">Пошук працівників</a><a href="jobs.html" aria-current="page">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container">
+  <article class="detail" id="job">
+    <aside class="detail__aside"><div class="photo" id="j-logo" aria-hidden="true">TE</div><span class="tag" id="j-co">TechNova</span></aside>
+    <div class="detail__main">
+      <div class="detail__head"><h1 id="j-title">Junior Frontend-розробник</h1><span class="tag" id="j-cat">Frontend</span><span class="tag tag--muted" id="j-lvl">junior</span></div>
+      <div class="card" id="j-desc"><p>Шукаємо початківця для роботи над інтерфейсами клієнтського порталу. Ви будете верстати сторінки за макетами Figma, підключати компоненти на React та разом із командою покращувати доступність сайту.</p></div>
+      <dl class="facts">
+        <div><dt>Бюджет</dt><dd id="j-budget">800–1200 $</dd></div>
+        <div><dt>Дедлайн</dt><dd id="j-deadline">30 днів</dd></div>
+        <div><dt>Формат</dt><dd id="j-format">Віддалено</dd></div>
+      </dl>
+      <button class="btn" type="button" id="apply-btn">Відгукнутись</button>
+    </div>
+  </article>
+  <dialog class="modal" id="apply-modal" aria-labelledby="apply-title">
+    <form method="dialog" id="apply-form">
+      <h2 id="apply-title">Подати заявку</h2>
+      <div class="field"><label for="a-letter">Супровідний лист</label><textarea class="textarea" id="a-letter" placeholder="Коротко розкажіть, чому ви підходите" required></textarea></div>
+      <div class="field"><label for="a-rate">Очікувана ставка</label><input class="input" id="a-rate" type="text" placeholder="наприклад, 300 грн/год" required></div>
+      <div class="actions"><button class="btn btn--outline" type="button" id="apply-cancel">Скасувати</button><button class="btn" type="submit">Надіслати</button></div>
+    </form>
+  </dialog>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

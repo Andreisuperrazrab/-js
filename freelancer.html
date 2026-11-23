@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профіль фрілансера — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html" aria-current="page">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main class="container">
+  <article class="detail" id="profile">
+    <aside class="detail__aside"><div class="photo" id="p-photo" aria-hidden="true">ВК</div>
+      <span class="rating" id="p-rating"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>4.5</span></aside>
+    <div class="detail__main">
+      <div class="detail__head"><h1 id="p-name">Віталій Кравченко</h1><span class="status status--free" id="p-status">Free</span></div>
+      <p class="card" id="p-desc">Верстаю адаптивні інтерфейси на HTML, CSS і JavaScript, працюю з Figma та React. Шукаю перші комерційні проєкти.</p>
+      <dl class="facts">
+        <div><dt>Напрямок</dt><dd id="p-cat">Frontend</dd></div>
+        <div><dt>Рівень</dt><dd id="p-lvl">junior</dd></div>
+        <div><dt>Ставка</dt><dd id="p-rate">250 грн/год</dd></div>
+        <div><dt>Локація</dt><dd id="p-loc">Київ</dd></div>
+      </dl>
+      <ul class="chips" id="p-stack" aria-label="Стек технологій"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Figma</li></ul>
+      <a class="btn" id="p-contact" href="chat.html?with=1">Зв'язатись</a>
+    </div>
+  </article>
+</main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

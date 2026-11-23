@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Виникли проблеми? — Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="">
+<header class="site-header"><a class="logo" href="home.html" aria-label="Bounty Hunter — на головну"><img src="assets/logo.svg" alt="Bounty Hunter"></a><nav class="site-nav" aria-label="Основна навігація"><a href="freelancers.html">Пошук працівників</a><a href="jobs.html">Пошук роботи</a><a href="chat.html">Чат</a><a href="index.html" data-logout>Вийти</a></nav></header>
+<main><article class="article">
+  <h1>Виникли проблеми?</h1>
+  <div class="faq">
+    <details><summary>Не можу увійти в систему</summary><p>Перевірте логін і пароль. Якщо ви ще не зареєстровані — створіть акаунт на сторінці реєстрації.</p></details>
+    <details><summary>Як відгукнутись на вакансію?</summary><p>Відкрийте вакансію, натисніть «Відгукнутись», напишіть супровідний лист і вкажіть очікувану ставку.</p></details>
+    <details><summary>Як зв'язатися з фрілансером?</summary><p>У профілі фрілансера натисніть «Зв'язатись» — відкриється чат.</p></details>
+  </div>
+  <form class="card" id="help-form" style="display:grid;gap:12px">
+    <h2 style="font-size:16px">Написати в підтримку</h2>
+    <div class="field"><label for="h-msg">Опишіть проблему</label><textarea class="textarea" id="h-msg" required></textarea></div>
+    <button class="btn" type="submit" style="justify-self:start">Надіслати</button>
+    <p class="form-error" id="help-note" role="status" style="color:#16a34a"></p>
+  </form>
+</article></main>
+<footer class="site-footer">
+  <a href="help.html">виникли проблеми ?</a>
+  <a href="about.html">Про сайт</a>
+  <div class="social"><a href="https://facebook.com" aria-label="Facebook"><img src="assets/facebook.svg" alt="Facebook"></a><a href="https://instagram.com" aria-label="Instagram"><img src="assets/instagram.svg" alt="Instagram"></a></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

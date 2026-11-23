@@ -1,0 +1,26 @@
+/* Дизайн-токени (shadcn/ui Design System з Figma, ПР № 2) */
+:root {
+  /* Кольори */
+  --slate-900: #0f172a;   /* темні кнопки */
+  --gray-900: #111827;    /* основний текст */
+  --slate-300: #cbd5e1;   /* рамки полів */
+  --slate-400: #94a3b8;   /* підказки */
+  --accent: #3770ff;      /* посилання, теги */
+  --white: #ffffff;
+  --star: #f5b301;
+  --bubble-in: #f1f5f9;
+
+  /* Типографіка (Inter) */
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --fs-small: 14px;
+  --fs-h1: 28px;
+  --fs-h2: 20px;
+  --lh-small: 14px;
+  --lh-body: 20px;
+  --lh-button: 24px;
+
+  /* Розміри */
+  --radius: 6px;
+  --container: 1152px;
+  --shadow: 0 1px 3px rgba(15, 23, 42, .15), 0 1px 2px rgba(15, 23, 42, .1);
+}
